@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laito's Meat Palace
+        </title>
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+            <nav>
+                <img src="images/logo.png" class="logo anim">
+                <ul class="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>                
+                <img src="images/menu.png" class="menu" onclick="menutoggle()">
+            </nav> 
+            </div>
+      
+            <div class="row">
+                <div class="col">
+                    <h1 class="anim">Best MeatPalace <br>in Kimana</h1>
+                    <a href="#" class="btn anim">Order Now</a>
+                </div>
+                <div class="col">
+                    <img src="images/pic1.png" class="featurd-img anim">
+                     <img src="images/nyamachoma.jpg" class="thumbnail-img anim">
+                </div>
+
+            </div>
+        </div>
+<!--        sliders-->
+
+        
+    <!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "20px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+        
+        
+    </body>
+    
+    
+</html>
